@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/gear.css" />
+    <title>gear_page</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html"><img src="icon/logo_333png.png" alt="ロゴ" /></a></h1>
+      <ul>
+        <li><a href="#">
+          <img src="icon/icon_903030.png" alt="icon">
+          <p>車ごとレンタル</p>
+        </a></li>
+        <li><a href="gear.html">
+          <i class="fas fa-campground"></i>
+          <p>キャンプギア</p>
+        </a></li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <p>ご予約</p>
+          </a>
+        </li>
+        <li>
+          <div class="humburger" id="menuBtn">
+            <div class="humburger_top" id="menuBtnTop"></div>
+          <div class="humburger_under" id="menuBtnUnder"></div>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="gear-top_margin"></div>
+      <div class="item_flex-wrap">
+        <section class="gear_option_bar optoion_bar_slide_in" id="optionBar">
+          <ul>
+            <li class="favorite">
+              <i class="fas fa-heart"></i>
+              <p>お気に入り</p>
+            </li>
+            <li id="itemFilterBtn">
+              <i class="fas fa-search-plus"></i>
+              <p>絞り込み</p>
+            </li>
+            <li id="itemSortBtn">
+              <i class="fas fa-sort-amount-down"></i>
+              <p id="sortName">人気順</p>
+            </li>
+          </ul>
+          <div class="item-sort">
+            <form class="sort-box">
+              <div>
+                <label for="popular-rank">人気順
+                  <i class="fas fa-check"></i> </label>
+                <input type="radio" name="sort" id="popular-rank" checked>
+              </div>
+              <div>
+                <label for="price-low">安い順
+                  <i class="fas fa-check"></i> </label>
+                <input type="radio" name="sort" id="price-low" >
+              </div>
+              <div>
+                <label for="price-high">高い順
+                  <i class="fas fa-check"></i></label>
+                <input type="radio" name="sort" id="price-high" >
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="flex_category-tag">
+          <section class="category">
+            <h1>キャンプギア</h1>
+            <form class="search-box">
+              <input type="radio" name="category" value="set" id="set">
+              <label for="set">セット</label>
+              
+              <input type="radio" name="category" value="tent" id="tent">
+              <label for="tent">テント</label>
+              <input type="radio" name="category" value="mat" id="mat">
+              <label for="mat">マット</label>
+              <input type="radio" name="category" value="tarp" id="tarp">
+              <label for="tarp">タープ</label>
+              <input type="radio" name="category" value="sleep" id="sleep">
+              <label for="sleep">寝袋</label>
+              <input type="radio" name="category" value="table" id="table">
+              <label for="table">テーブル</label>
+              <input type="radio" name="category" value="chair" id="chair">
+              <label for="chair">チェア</label>
+              <input type="radio" name="category" value="takibi" id="takibi">
+              <label for="takibi">焚き火台</label>
+              <input type="radio" name="category" value="stove" id="stove">
+              <label for="stove">コンロ</label>
+              <input type="radio" name="category" value="catrely" id="catrely">
+              <label for="catrely">食器類</label>
+              <input type="radio" name="category" value="kitchen" id="kitchen">
+              <label for="kitchen">調理器具</label>
+              <input type="radio" name="category" value="rantan" id="rantan">
+              <label for="rantan">ランタン</label>
+              <input type="radio" name="category" value="other" id="other">
+              <label for="other">その他</label>
+              <input type="radio" name="category" value="" id="all">
+              <label for="all" class="active">全てのカテゴリー</label>
+            </form>
+          </section>
+          <div class="tag">
+            <h3>特徴</h3>
+            <form class="search-box">
+              <input type="checkbox" name="tag" value="hatsu" id="hatsu">
+              <label for="hatsu">＃初キャン</label>
+              <input type="checkbox" name="tag" value="joshi" id="joshi">
+              <label for="joshi">＃女子キャン</label>
+              <input type="checkbox" name="tag" value="yaei" id="yaei">
+              <label for="yaei">＃野営</label>
+              <input type="checkbox" name="tag" value="family" id="family">
+              <label for="family">＃ファミリー</label>
+              <input type="checkbox" name="tag" value="bbq" id="bbq">
+              <label for="bbq">＃BBQ</label>
+              <input type="checkbox" name="tag" value="solo" id="solo">
+              <label for="solo">＃ソロキャン</label>
+              <span id="tagResetBtn">リセット</span>
+            </form>
+          </div>
+            <div class="season">
+              <h3>シーズン</h3>
+              <form class="search-box">
+                <input type="radio" name="season" value="spring" id="spring">
+                <label for="spring">春</label>
+                <input type="radio" name="season" value="summer" id="summer">
+                <label for="summer">夏</label>
+                <input type="radio" name="season" value="autumn" id="autumn">
+                <label for="autumn">秋</label>
+                <input type="radio" name="season" value="winnter" id="winnter">
+                <label for="winnter">冬</label>
+                <input type="radio" name="season" value="" id="unset">
+                <label for="unset">指定しない</label>
+              </form>
+            </div>
+            <div class="people">
+            <h3>人数</h3>
+            <form class="search-box">
+              <input type="radio" name="people" value="people1" id="p1">
+              <label for="p1">１人</label>
+              <input type="radio" name="people" value="people2" id="p2">
+              <label for="p2">２人</label>
+              <input type="radio" name="people" value="people3" id="p3">
+              <label for="p3">３人</label>
+              <input type="radio" name="people" value="people4" id="p4">
+              <label for="p4">４人</label>
+              <input type="radio" name="people" value="people5" id="p5">
+              <label for="p5">５人以上</label>
+              <input type="radio" name="people" value="" id="p-unset">
+              <label for="p-unset">指定しない</label>
+            </form>
+            </div>
+        </div>
+      <section class="items">
+        <!-- <div class="filtering-result">
+          <p id="filteringWord"></p>
+        </div> -->
+        <ul class="items_ul container">
+          <li class="item-list" data-category="set" data-tag="joshi" data-tag_02="hatsu" data-season="spring" data-people="people2" data-popular="1" 
+          data-price="8900" >
+            <a href="#"><img src="img/ranking_001.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【春】二人用ベーシックセット</h2>
+              <h3>¥8,900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+                <p>＃女子キャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="set" data-tag="hatsu" data-tag_02="solo" data-season="spring" data-people="people1" data-popular="2" 
+          data-price="5900">
+            <a href="#"><img src="img/ranking_002.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【春】ソロ用ベーシックセット</h2>
+              <h3>¥5,900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+                <p>＃ソロキャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="set" data-tag="family" data-tag_02="bbq" data-season="winnter" data-people="people4" data-popular="3" 
+          data-price="11900">
+            <a href="#"><img src="img/ranking_003.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【冬】四人用フルセット</h2>
+              <h3>¥11,900</h3>
+              <div class="items_tag">
+                <p>＃ファミリー</p>
+                <p>＃BBQ</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="tent" data-tag="hatsu" data-tag_02="yaei" data-season="winnter" data-people="people2" data-popular="4" 
+          data-price="7900">
+            <a href="#"><img src="img/ranking_004.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【冬】二人用ドームテント</h2>
+              <h3>¥7,900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+                <p>＃野営</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="set" data-tag="joshi" data-season="spring" data-people="people2" data-popular="5" 
+          data-price="15900">
+            <a href="#"><img src="img/ranking_005.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【春】二人用ラグジュアリーセット</h2>
+              <h3>¥15,900</h3>
+              <div class="items_tag">
+                <p>＃女子キャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li  class="item-list" data-category="takibi" data-tag="hatsu" data-season="" data-people="people2" data-popular="6" 
+          data-price="1900">
+            <a href="#"><img src="img/ranking_006.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>焚き火セット【中】</h2>
+              <h3>¥1,900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="kitchen" data-tag="hatsu" data-tag_02="joshi" data-season="" data-people="people2" data-popular="7" 
+          data-price="2900">
+            <a href="#"><img src="img/ranking_007.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>調理セット【中】</h2>
+              <h3>¥2,900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+                <p>＃女子キャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="tent" data-tag="hatsu" data-season="" data-people="" data-popular="8" 
+          data-price="900">
+            <a href="#"><img src="img/ranking_008.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>ペグ＆ハンマーセット</h2>
+              <h3>¥900</h3>
+              <div class="items_tag">
+                <p>＃初キャン</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li class="item-list" data-category="other" data-tag="yaei" data-season="" data-people="people2" data-popular="9" 
+          data-price="3900">
+            <a href="#"><img src="img/ranking_009.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>釣りセット2人用</h2>
+              <h3>¥3,900</h3>
+              <div class="items_tag">
+                <p>＃野営</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+          <li  class="item-list" data-category="table" data-tag="family" data-season="all" data-people="people4" data-popular="10" 
+          data-price="3200">
+            <a href="#"><img src="img/ranking_010.jpg" alt="画像" /></a>
+            <div class="items_body">
+              <i class="far fa-heart"></i>
+              <h2>【４人用】テーブルセット</h2>
+              <h3>¥3,200</h3>
+              <div class="items_tag">
+                <p>＃ファミリー</p>
+              </div>
+            </div>
+            <div class="cart-in_btn">
+              <p>カートに入れる</p>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="page_num">
+          <a href="#"><i class="fas fa-angle-left"></i></a>
+          <div class="page_num_num">
+            <a href="#">１</a>
+            <a href="#">２</a>
+            <a href="#">３</a>
+          </div>
+          <a href="#"><i class="fas fa-angle-right"></i></a>
+        </div> -->
+      </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="nav">
+        <div class="left">
+          <ul>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#">キャンプギア</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">特集</a></li>
+            <li><a href="#">ご利用方法</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">　- 車ごとレンタル</a></li>
+            <li><a href="#">　- 紛失・破損について</a></li>
+            <li><a href="#">　- レンタル保険について</a></li>
+            <li><a href="#">　- 料金内訳</a></li>
+            <li><a href="#">　- キャンセルポリシー</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <p><a href="#">キャンガルーについて</a></p>
+          <ul>
+            <li><a href="#">　- アクセス</a></li>
+            <li><a href="#">　- お問い合わせ</a></li>
+            <li><a href="#">　- よくあるご質問</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <img src="icon/logo_fff4e3.png" alt="ロゴ" />
+      <small>copyright_camgaroo_2022</small>
+    </footer>
+    <!-- item-filter--------- -->
+    <div class="item_filter"></div>
+    <div class="item-filter">
+      <i class="fas fa-times close-btn"></i>
+      <h1>絞り込み</h1>
+      
+    </div>
+        <!-- menu----------- -->
+        <div class="menu_filter"></div>
+        <div class="header_nav" id="menuSlide">
+          <ul class="header_nav_list">
+            <li class="header_nav_gear">
+              <h2><a href="#">キャンプギア</a></h2>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="far fa-heart"></i>
+                    <p>お気に入り</p>
+                  </a>
+                </li>
+                <li><a href="#">- セット</a></li>
+                <li><a href="#">- テント</a></li>
+                <li><a href="#">- マット</a></li>
+                <li><a href="#">- タープ</a></li>
+                <li><a href="#">- 寝袋</a></li>
+                <li><a href="#">- テーブル</a></li>
+                <li><a href="#">- チェア</a></li>
+                <li><a href="#">- 焚き火台</a></li>
+                <li><a href="#">- コンロ</a></li>
+                <li><a href="#">- 食器類</a></li>
+                <li><a href="#">- 調理器具</a></li>
+                <li><a href="#">- ランタン</a></li>
+                <li><a href="#">- その他</a></li>
+              </ul>
+            </li>
+            <li class="header_nav_news">
+              <h2><a href="#">お知らせ</a></h2>
+            </li>
+            <li class="header_nav_feature">
+              <h2><a href="#">特集</a></h2>
+            </li>
+            <li class="header_nav_how-to">
+              <h2><a href="#">ご利用方法</a></h2>
+              <ul>
+                <li><a href="#">- 車ごとレンタル</a></li>
+                <li><a href="#">- 紛失・破損について</a></li>
+              </ul>
+            </li>
+            <li class="header_nav_about">
+              <h2><a href="#">キャンガルーについて</a></h2>
+              <ul>
+                <li><a href="#">- アクセス</a></li>
+              <li><a href="#">- お問い合わせ</a></li>
+              <li><a href="#">- よくあるご質問</a>
+              </ul></li>
+            </li>
+          </ul>
+          <div class="header_nav_sns">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+        <!-- menu----------- -->
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

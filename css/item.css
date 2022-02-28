@@ -1,0 +1,159 @@
+/* common------------------ */
+
+.body-main,
+.body-sub {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* cart-btn------------------ */
+.item_cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.item_cart-btn p {
+  position: fixed;
+  bottom: 40px;
+  background-color: #265155;
+  border-radius: 10px;
+  padding: 24px 120px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff4e3;
+  z-index: 10;
+}
+/* img-area------------------ */
+.img_area {
+  margin-bottom: 24px;
+}
+/* body-main------------------ */
+.body-main {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.item-name {
+  font-size: 24px;
+}
+.item-price {
+  font-size: 24px;
+  color: #903030;
+  margin-bottom: 24px;
+}
+.item-tag {
+  margin-bottom: 16px;
+}
+.item-tag p {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #265155;
+}
+.item-difficult p {
+  display: inline-block;
+  margin-right: 8px;
+}
+.item-difficult .how-much {
+  color: #265155;
+}
+.item-difficult_star {
+  margin-top: 8px;
+  color: white;
+}
+.item-difficult_star li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.item-difficult_star li:nth-child(1) {
+  color: #ffc505;
+}
+/* body-sub------------------ */
+.body-sub {
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+.item-about,
+.item-contents {
+  margin-bottom: 24px;
+}
+.body-sub h3 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.body-sub h4 {
+  color: #265155;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.item-about p {
+  font-size: 16px;
+}
+.item-contents ul {
+  margin-bottom: 16px;
+}
+.item-contents li {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.item-contents .item-supplement p {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #265155;
+}
+.item-movie_area {
+  width: 100%;
+  height: 200px;
+  background: url(../img/ranking_001.jpg) center center no-repeat;
+  background-size: cover;
+}
+.item-movie_area .filter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-movie_area i {
+  font-size: 48px;
+  color: #fff4e3;
+}
+/* item-reccommend-------------- */
+.item-reccommend {
+  padding-left: 24px;
+}
+.item-reccommend h1 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.item-reccommend ul {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  overflow: scroll;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.item-reccommend ul li {
+  margin-right: 20px;
+}
+.item-reccommend ul li img {
+  width: 128px;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 5px 5px 0 0;
+}
+.item-reccommend ul li h2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.item-reccommend ul li h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #903030;
+}
