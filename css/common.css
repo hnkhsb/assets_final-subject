@@ -161,8 +161,8 @@ header ul li .humburger_under {
     z-index: 1000;
   }
   header h1 img {
-    height: 40px;
-    width: 84px;
+    height: 100%;
+    width: 120px;
     object-fit: contain;
   }
   header ul {
